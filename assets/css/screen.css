@@ -961,7 +961,8 @@ body.tag-template #navbar {
 #post-footer {
     position: relative;
     height: 120px;
-    margin: 0 80px;
+    margin: 0 40px 20px 40px;
+    border-bottom: 1px solid #e6e6e6;
 }
 
 #author-image {
