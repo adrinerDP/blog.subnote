@@ -6,11 +6,6 @@ sitemap: yes
 tags: [about]
 ---
 
-<div align="center">
-<img src="/files/authors/junsu.lee.gif" height="150px"><br/>
-<small>ZEPETO 짱짱맨!</small>
-</div>
-
 # 👋 안녕하세요!
 ⚡ 소프트웨어 기술을 통해 **사회를 변화시킬 수 있다는 믿음**을 가지고 있는 개발자, 이준수입니다.
 
@@ -60,3 +55,8 @@ _왜 이러한 문장을 선택 했을까요?_
 그렇게 `바퀴 재창조 하기`는 이런 사고회로를 돌리고 돌려 나오게 되었습니다.
 
 ---
+
+<div align="center">
+<img src="/files/authors/junsu.lee.gif" height="150px"><br/>
+<small>ZEPETO 짱짱맨 👍</small>
+</div>
