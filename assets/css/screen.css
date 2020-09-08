@@ -395,9 +395,8 @@ for small screen(<720px):
     width: 100%;
     height: 310px;
     padding: 0;
-    background: no-repeat center;
+    background: no-repeat bottom;
     background-size: cover;
-    text-shadow: 0 0 10px black;
 }
 
 #cover > * {
@@ -728,10 +727,6 @@ a.tag:hover {
 +-----------------------------------------------+
 */
 
-#cover {
-    background-position-y: bottom;
-}
-
 body.home-template #cover,
 body.archive-template #cover,
 body.page-template #cover {
@@ -833,8 +828,8 @@ body.tag-template #navbar {
     margin: 0 40px;
     padding: 70px 40px 100px 40px; /* 40(margin) + 40(padding) = 80 */
     border-bottom: 1px solid #e6e6e6;
-    font-size: 18px;
-    line-height: 36px; /* 28px = 16(font-size) + 12(line-spacing) */
+    font-size: 16px;
+    line-height: 28px; /* 28px = 16(font-size) + 12(line-spacing) */
     text-align: justify;
 }
 
