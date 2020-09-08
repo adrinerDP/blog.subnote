@@ -1,10 +1,9 @@
 ---
 layout: post
 title: '카카오 코드 페스티벌 본선 이야기'
-author: bryan.j
+author: junsu.lee
 date: 2017-09-14 08:00
 tags: [code-festival, programming-contest, coding]
-image: /files/covers/code-festival.jpg
 ---
 
 ## 드디어 본선의 막이 열렸습니다!

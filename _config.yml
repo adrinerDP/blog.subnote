@@ -1,13 +1,13 @@
-title: kakao 기술 블로그
-email: opensource@kakaocorp.com
+title: 매드라이너의 서브노트
+email: me@adrinerdp.co
 description: |
-  Connect Everything 새로운 연결, 새로운 세상.
-  연결의 혁신으로 세상은 더욱 가깝고 새로워진다고 카카오는 믿습니다.
+  기술로 사회 변화를 이끌 수 있다고 믿습니다.
+  수레를 만들기 위해 바퀴를 재창조 중입니다.
 baseurl: ''
-url: 'http://tech.kakao.com'
+url: 'https://adrinerDP'
 timezone: Asia/Seoul 
 
-repository: kakao/kakao.github.io
+repository: adrinerDP/blog
 
 permalink: /:year/:month/:day/:title/
 
@@ -50,19 +50,16 @@ exclude: [README.md, Gemfile, Gemfile.lock]
 keep_files: [assets, files]
 github: [metadata]
 # iolo's custom
-author: opensource@kakaocorp.com
-image: '/assets/images/default_blog_cover.jpg'
+author: Junsu Lee
+image: '/assets/images/default_blog_cover.png'
 asset_url: /assets
-#asset_url: //meta-kage.kakaocdn.net/dn/osa/blog/assets
-#asset_url: //t1.daumcdn.net/osa/blog/assets
 google_analytics:
   ua: 'UA-72007721-1'
 facebook:
-  app_id: '1204347326263800'
-  username: nkakao
+  username: adrinerDP
 twitter:
-  username: kakaodev
+  username: adrinerDP
 google_plus:
-  username: kakaodev
+  username: adrinerDP
 github_url:
-  username: kakao
+  username: adrinerDP

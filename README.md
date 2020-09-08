@@ -1,41 +1,6 @@
-tech.kakao.com
+매드라이너의 서브노트
 ==============
 
-> 주의: [GitHub Pages]와 [Jekyll]에 대해서 충분히 숙지할 것.
-> 주의: [Collaborating on projects using issues and pull requests](https://help.github.com/categories/collaborating-on-projects-using-issues-and-pull-requests/)을 정독.
-
-
-### 설치
-
-<https://github.com/kakao/kakao.github.io> 에 push 권한이 있다면:
-
-1. git fetch or pull or clone
-2. [Jekyll] 설치
-
-```console
-$ git clone git@github.com:kakao/kakao.github.io.git
-$ cd kakao.github.io
-$ bundle install
-```
-
-<https://github.com/kakao/kakao.github.io> 에 push 권한이 없다면:
-
-1. <https://github.com/kakao/kakao.github.io> 에서 `Fork` 버튼 클릭하고,
-2. 포크 저장소 계정(maybe 개인 계정) 선택
-3. git fetch or pull or clone
-4. 포크 설정 [Configuring a remote for a fork](https://help.github.com/articles/configuring-a-remote-for-a-fork/)
-5. 포크 동기화 [Syncing a fork](https://help.github.com/articles/syncing-a-fork/)
-6. [Jekyll] 설치
-
-```console
-$ git clone git@github.com:YOUR_GITHUB_ACCOUNT/kakao.github.io.git
-$ cd kakao.github.io
-$ git remote add upstream git@github.com:kakao/kakao.github.io.git
-$ git fetch upstream
-$ git checkout master
-$ git merge upstream/master
-$ bundle install
-```
 
 ### 실행(로컬)
 
@@ -46,17 +11,10 @@ $ open http://localhost:4000
 
 ### 배포(발행)
 
-<https://github.com/kakao/kakao.github.io> 에 push 권한이 있다면:
-
 ```
 $ git commit -m '...'
 $ git push origin master
 ````
-
-<https://github.com/kakao/kakao.github.io> 에 push 권한이 없다면:
-
-1. Fork 동기화 [Syncing a fork](https://help.github.com/articles/syncing-a-fork/)
-2. Pull Request 보내기 [Creating a pull request](https://help.github.com/articles/creating-a-pull-request/)
 
 ### 새 글 작성
 
@@ -108,18 +66,6 @@ $ bundle exec jekyll serve --drafts
 
 ---
 
-문의: <opensource@kakaocorp.com>
-
-May the **SOURCE** be with you...
-
-[GitHub Pages]: https://pages.github.com
-[Jekyll]: https://jekyllrb.com
-[front matter]: https://jekyllrb.com/docs/frontmatter/
-[gfm]: https://guides.github.com/features/mastering-markdown/
-[kramdown]: http://kramdown.gettalong.org
-[rouge]: http://rouge.jneen.net
-
-
 ## License
 
 This software is licensed under the [Apache 2 license](LICENSE.txt), quoted below.
@@ -129,7 +75,3 @@ Copyright 2017 Kakao Corp. <http://www.kakaocorp.com>
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this project except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0.
 
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
-
-### caution
-Kakao fonts(/assets/fonts/) and image(/assets/image/) are only avaiable for Kakao brands.
-> 카카오 폰트(/assets/fonts/)와 이미지(/assets/image/)는 카카오 브랜드용으로 다른 용도로는 이용할 수 없습니다.

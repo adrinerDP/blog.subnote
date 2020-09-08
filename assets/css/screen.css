@@ -6,8 +6,8 @@
 }
 
 body {
-    font-family: sans-serif;
-    font-weight: 300; /* @@iolo 200 -> 300, 200 for retina only! */
+    font-family: 'KoPubWorld Dotum', sans-serif;
+    font-weight: 300;
     color: #505050;
     background-color: #fff;
 }
@@ -18,17 +18,21 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Kakao', sans-serif;
-    font-weight: 400;
+    font-family: 'KoPubWorld Dotum', sans-serif;
+    font-weight: 700;
     color: #1e1e1e;
+}
+
+#post-content {
+    font-family: 'KoPubWorld Batang', serif;
 }
 
 pre,
 code,
 tt,
 kbd {
-    font-family: monospace;
-    font-weight: 300;
+    font-family: 'D2Coding', monospace;
+    font-weight: 400;
 }
 
 code.highlighter-rouge {
@@ -41,8 +45,8 @@ code.highlighter-rouge {
   border-radius: 3px;
 }
 
-b, strong, optgroup {
-    font-weight: 400;
+div.highlighter-rouge pre.highlight {
+    border: none;
 }
 
 a, a:link, a:visited, a:active, a:hover {
@@ -192,15 +196,10 @@ for small screen(<720px):
 }
 
 #logo {
-    position: absolute;
-    top: 0;
-    left: 30px;
-    width: 123px;
-    height: 60px;
-    margin: 0 0;
-    padding: 0;
-    background: url(../images/pc/tech_logo.png) no-repeat center;
-    background-size: 123px 21px;
+    font-weight: 700;
+    float: left;
+    line-height: 59px;
+    padding: 0 20px;
 }
 
 #menu {
@@ -208,7 +207,6 @@ for small screen(<720px):
     list-style: none;
     margin: 0;
     padding: 0;
-    text-align: center;
 }
 
 #menu > li {
@@ -240,14 +238,8 @@ for small screen(<720px):
 }
 
 #search {
-    position: absolute;
-    z-index: 99;
-    top: 0;
-    right: 30px;
-    height: 60px;
-    margin: 0;
-    padding: 0;
     line-height: 60px;
+    float: right;
 }
 
 #search > input {
@@ -350,6 +342,9 @@ for small screen(<720px):
 }
 
 #footer-menu, #copyright {
+    font-size: 13px;
+    font-weight: 700;
+    padding: 10px 0;
     text-align: left;
 }
 
@@ -393,10 +388,6 @@ for small screen(<720px):
     background-image: url(../images/pc/icon_rss.png);
 }
 
-#copyright {
-    padding-top: 10px;
-}
-
 /* cover */
 
 #cover {
@@ -406,6 +397,7 @@ for small screen(<720px):
     padding: 0;
     background: no-repeat center;
     background-size: cover;
+    text-shadow: 0 0 10px black;
 }
 
 #cover > * {
@@ -431,6 +423,7 @@ for small screen(<720px):
 #cover h1 {
     font-size: 36px;
     line-height: 52px; /* 52px = 36(font-size) + 16(line-spacing) */
+    font-weight: 700;
 }
 
 #cover p {
@@ -547,7 +540,7 @@ for small screen(<720px):
 #cover,
 #navbar,
 #footer {
-    font-family: 'Kakao', sans-serif !important;
+    font-family: 'KoPubWorld Dotum', sans-serif !important;
 }
 
 /* list(loop) */
@@ -735,7 +728,8 @@ a.tag:hover {
 +-----------------------------------------------+
 */
 
-body.home-template {
+#cover {
+    background-position-y: bottom;
 }
 
 body.home-template #cover,
@@ -745,23 +739,23 @@ body.page-template #cover {
 }
 
 body.home-template #cover {
-    background-image: url(../images/default_blog_cover.jpg);
+    background-image: url(../images/default_blog_cover.png);
 }
 
 body.post-template #cover {
-    background-image: url(../images/default_post_cover.jpg);
+    background-image: url(../images/default_post_cover.png);
 }
 
 body.page-template #cover {
-    background-image: url(../images/default_page_cover.jpg);
+    background-image: url(../images/default_cover.png);
 }
 
 body.author-template #cover {
-    background-image: url(../images/default_author_cover.jpg);
+    background-image: url(../images/default_author_cover.png);
 }
 
 body.tag-template #cover {
-    background-image: url(../images/default_tag_cover.jpg);
+    background-image: url(../images/default_cover.png);
 }
 
 body.home-template #cover p,
@@ -839,8 +833,8 @@ body.tag-template #navbar {
     margin: 0 40px;
     padding: 70px 40px 100px 40px; /* 40(margin) + 40(padding) = 80 */
     border-bottom: 1px solid #e6e6e6;
-    font-size: 16px;
-    line-height: 28px; /* 28px = 16(font-size) + 12(line-spacing) */
+    font-size: 18px;
+    line-height: 36px; /* 28px = 16(font-size) + 12(line-spacing) */
     text-align: justify;
 }
 
@@ -1192,15 +1186,10 @@ body.page-template {
     }
 
     #logo {
+        line-height: 50px;
         position: absolute;
-        display: inline-block;
-        left: 50px;
-        right: 50px;
-        top: 0;
-        height: 50px;
-        margin: 0 auto;
-        background-image: url(../images/mo/tech_logo.png);
-        background-size: 99px 17px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     #menu {
@@ -1251,7 +1240,7 @@ body.page-template {
 
     /* footer */
     #footer {
-        height: 240px; /* 240px >= 90(#links height) + 20 + 12(#footer-menu height) + 10 + 12(#copyright height) + 90 */
+        height: 198px; /* 240px >= 90(#links height) + 12(#copyright height) + 90 */
     }
 
     #links {
@@ -1583,10 +1572,6 @@ body.page-template {
         font-weight: 200; /* @@iolo 200 for retina only! */
     }
 
-    #logo {
-        background-image: url(../images/mo/tech_logo@2x.png);
-    }
-
     #menu-toggle {
         background-image: url(../images/mo/icon_menu@2x.png);
     }
@@ -1671,10 +1656,6 @@ body.page-template {
 @media (-webkit-min-device-pixel-ratio: 3) {
     body {
         font-weight: 200; /* @@iolo 200 for retina only! */
-    }
-
-    #logo {
-        background-image: url(../images/mo/tech_logo@3x.png);
     }
 
     #menu-toggle {
