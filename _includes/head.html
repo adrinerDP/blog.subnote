@@ -1,6 +1,6 @@
-<meta charset="utf-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no"/>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
 {% if page.layout == 'post' or page.layout == 'page' %}
 {% assign meta_title = page.title %}
 {% assign meta_author = page.author | default: site.author %}
@@ -20,44 +20,39 @@
 {% assign meta_image = meta_image | prepend: site.url %}
 {% endunless %}
 <title>{{ meta_title }}</title>
-<meta name="title" content="{{ meta_title }}" />
-<meta name="author" content="{{ meta_author }}"/>
-<meta name="description" content="{{ meta_description }}"/>
+<meta name="title" content="{{ meta_title }}" >
+<meta name="author" content="{{ meta_author }}">
+<meta name="description" content="{{ meta_description }}">
 {% if site.facebook.app_id %}
-<meta property="fb:app_id" content="{{ site.facebook.app_id }}"/>
+<meta property="fb:app_id" content="{{ site.facebook.app_id }}">
 {% endif %}
-<meta property="og:site_name" content="{{ site.title }}"/>
-<meta property="og:type" content="{{ meta_type }}"/>
-<meta property="og:title" content="{{ meta_title }}"/>
-<meta property="og:description" content="{{ meta_description }}"/>
-<meta property="og:url" content="{{ meta_url }}"/>
-<meta property="og:image" content="{{ meta_image }}"/>
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="{{ meta_title }}"/>
-<meta name="twitter:description" content="{{ meta_description }}"/>
-<meta name="twitter:label1" content="Written by"/>
-<meta name="twitter:data1" content="{{ meta_author }}"/>
-<meta name="twitter:image:src" content="{{ meta_image }}"/>
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:type" content="{{ meta_type }}">
+<meta property="og:title" content="{{ meta_title }}">
+<meta property="og:description" content="{{ meta_description }}">
+<meta property="og:url" content="{{ meta_url }}">
+<meta property="og:image" content="{{ meta_image }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ meta_title }}">
+<meta name="twitter:description" content="{{ meta_description }}">
+<meta name="twitter:label1" content="Written by">
+<meta name="twitter:data1" content="{{ meta_author }}">
+<meta name="twitter:image:src" content="{{ meta_image }}">
 {% if page.tags %}
-<meta name="twitter:label2" content="Filed under"/>
-<meta name="twitter:data2" content="{{ page.tags | join: ','}}"/>
+<meta name="twitter:label2" content="Filed under">
+<meta name="twitter:data2" content="{{ page.tags | join: ','}}">
 {% for tag in page.tags %}
-<meta property="article:tag" content="{{ tag }}"/>
+<meta property="article:tag" content="{{ tag }}">
 {% endfor %}
 {% endif %}
 {% if page.date %}
-<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}"/>
+<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
 {% endif %}
 {% if page.author %}
-<meta property="article:author" content="{{ site.url }}{{ site.baseurl }}/authors/{{ page.author }}"/>
+<meta property="article:author" content="{{ site.url }}{{ site.baseurl }}/authors/{{ page.author }}">
 {% endif %}
-<link href="{{ site.url }}/rss/" rel="alternate" type="application/rss+xml" title="RSS"/>
-<link href="{{ site.asset_url }}/favicon.png" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
-<link href="{{ site.asset_url }}/favicon.png" rel="apple-touch-icon" type="image/png"/>
-<link href="{{ site.asset_url }}/favicon.png" rel="apple-touch-icon-precomposed" type="image/png"/>
-<link href="{{ site.asset_url }}/lib/normalize.css" rel="stylesheet" type="text/css"/>
-<link href="{{ site.asset_url }}/css/monokai.css" rel="stylesheet" type="text/css"/> 
-<link href="{{ site.asset_url }}/lib/magnific-popup.min.css" rel="stylesheet" type="text/css"/>
-<link href="{{ site.asset_url }}/css/screen.css" rel="stylesheet" type="text/css"/>
-<link href="//fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet"/>
-<link href="//cdn.jsdelivr.net/npm/d2coding@1/d2coding-full.min.css" rel="stylesheet"/>
+<link rel="alternate" type="application/rss+xml" href="{{ site.url }}/rss/" title="RSS">
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="{{ site.asset_url }}/favicon.png">
+<link rel="apple-touch-icon" type="image/png" href="{{ site.asset_url }}/favicon.png">
+<link rel="apple-touch-icon-precomposed" type="image/png" href="{{ site.asset_url }}/favicon.png">
+<link rel="stylesheet" href="{{ site.asset_url }}/css/styles.css">
