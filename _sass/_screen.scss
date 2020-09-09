@@ -1067,6 +1067,7 @@ body {
     width: 50%;
     background: url(../images/default_post_cover.png) no-repeat center;
     background-size: cover;
+    background-position-y: bottom;
   }
   
   #post-prev > *, #post-next > * {
