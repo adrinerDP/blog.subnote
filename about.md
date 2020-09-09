@@ -3,7 +3,6 @@ layout: page
 title: 👋 About
 permalink: /about/
 sitemap: yes
-tags: [about]
 ---
 
 # 👋 안녕하세요!

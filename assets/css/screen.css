@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'KoPubWorld Dotum', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
     font-weight: 300;
     color: #505050;
     background-color: #fff;
@@ -18,13 +18,13 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'KoPubWorld Dotum', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
     font-weight: 700;
     color: #1e1e1e;
 }
 
 #post-content {
-    font-family: 'KoPubWorld Batang', serif;
+    font-family: 'Noto Serif KR', serif;
 }
 
 pre,
@@ -539,7 +539,7 @@ for small screen(<720px):
 #cover,
 #navbar,
 #footer {
-    font-family: 'KoPubWorld Dotum', sans-serif !important;
+    font-family: 'Noto Sans KR', sans-serif !important;
 }
 
 /* list(loop) */
