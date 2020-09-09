@@ -954,8 +954,8 @@ body {
     }
   
     a {
-      text-decoration: underline;
-      text-decoration-color: #e6e6e6;
+      text-decoration: none;
+      border-bottom: 3px solid #f3cf00;
     }
   
     > *:first-child {
